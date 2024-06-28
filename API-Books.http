@@ -1,0 +1,43 @@
+### GET REQUEST (fetches existing book data (GET request))
+curl http://localhost:3000/books
+
+### POST REQUEST (adds a new book)
+curl -X POST \
+  http://localhost:3000/books \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Fiction",
+    "pages": 180,
+    "rating": 4.5
+}'
+
+### ### POST REQUEST (adds a new book)
+curl -X POST \
+  http://localhost:3000/books \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "title": "The Great vim",
+    "author": "Oda Scott Fitzgerald",
+    "genre": "Fiction",
+    "pages": 180,
+    "rating": 4.5
+}'
+
+### ### POST REQUEST (adds a new book)
+curl -X POST \
+  http://localhost:3000/books \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "title": "My first one word",
+    "author": "Akif Zidan",
+    "genre": "Fiction",
+    "pages": 18000,
+    "rating": 5.0
+}'
+
+### DELETE REQUEST (deletes a book with specific ID)
+curl -X DELETE http://localhost:3000/books/667dda7873d1271d32449955
+
+

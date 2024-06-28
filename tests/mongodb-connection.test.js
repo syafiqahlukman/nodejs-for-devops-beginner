@@ -31,7 +31,7 @@ const bookSchema = new mongoose.Schema({
 
 describe("Book Schema", () => {
   beforeAll(() => {
-    jest.spyOn(mongoose, 'connect').mockImplementation(() => Promise.resolve());
+    jest.spyOn(mongoose, "connect").mockImplementation(() => Promise.resolve());
   });
 
   afterAll(() => {

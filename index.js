@@ -4,10 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(express.json());
 // Serve static files from the "public" directory
-app.use(express.static('public'));
-
-// eslint-disable-next-line no-undef,no-unused-vars
-// var bar = a + 1;
+app.use(express.static("public"));
 
 // Connect to MongoDB
 async function connectToMongoDB() {
@@ -53,8 +50,8 @@ const bookSchema = new mongoose.Schema({
 });
 
 // Define a route for the homepage
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/index.html');
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/public/index.html");
 });
 
 // Create the Book model

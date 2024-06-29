@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "run:dev": "node index.js",
-    "test": "jest",
-    "sca": "npm audit",
-    "sast": "./node_modules/.bin/eslint .",
-    "formatting": "./node_modules/.bin/prettier --write ."
+    "test": "jest"
   },
   "author": "nur syafiqah",
   "license": "ISC",
